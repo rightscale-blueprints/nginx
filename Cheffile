@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site 'http://community.opscode.com/api/v1'
+
+cookbook 'nginx'
+
+cookbook 'apt',
+  :git => 'https://github.com/opscode-cookbooks/apt',
+  :ref => '1.10.0'
